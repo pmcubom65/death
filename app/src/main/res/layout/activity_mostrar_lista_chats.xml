@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:gravity="center_horizontal|bottom"
+
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mitoolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/gradiente"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/milistadechats"
+        android:layout_width="match_parent"
+        android:verticalScrollbarPosition="defaultPosition"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:id="@+id/empty_view_chats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:text="No hay Chats" />
+
+
+</LinearLayout>
+
+

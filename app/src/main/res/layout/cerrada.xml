@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/imagennotificacion"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:srcCompat="@tools:sample/avatars"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expandida Notification"
+            android:textStyle="bold|italic"
+            android:id="@+id/ttitulo"
+            android:textSize="22sp"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:id="@+id/tinfo"
+            android:textSize="18sp"
+            style="@style/TextAppearance.Compat.Notification.Info"/>
+
+    </LinearLayout>
+
+</LinearLayout>
